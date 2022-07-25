@@ -74,3 +74,12 @@ resource "boundary_group" "frontend_core_infra" {
   member_ids  = [for user in boundary_user.frontend : user.id]
   scope_id    = boundary_scope.core_infra.id
 }
+
+
+output "backend_details" {
+  value = boundary_account.backend_user_acct
+}
+
+output "frontend_details" {
+  value = boundary_account.frontend_user_acct
+}

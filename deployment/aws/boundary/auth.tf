@@ -4,3 +4,8 @@ resource "boundary_auth_method" "password" {
   type        = "password"
   scope_id    = boundary_scope.org.id
 }
+
+
+output "auth_boundary" {
+  value = boundary_auth_method.password
+}

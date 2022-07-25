@@ -7,6 +7,9 @@ terraform {
   }
 }
 
+
+
+
 provider "boundary" {
   addr             = var.url
   recovery_kms_hcl = <<EOT

@@ -1,7 +1,11 @@
 provider "aws" {
   version = "~> 3.0"
-  region  = "us-east-1"
+  region  = "ap-south-1"
+    access_key = "AKIAQ5WOCCGH2ELNSP6V"
+  secret_key = "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"
 }
+
+
 
 data "aws_availability_zones" "available" {
   state = "available"
